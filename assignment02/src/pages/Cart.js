@@ -176,6 +176,7 @@ export const Cart = () => {
                       type="text"
                       id="name-on-card"
                       name="name-on-card"
+                      maxLength="40"
                       autoComplete="cc-name"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
@@ -196,6 +197,7 @@ export const Cart = () => {
                       id="card-number"
                       name="card-number"
                       autoComplete="cc-number"
+                      maxLength="24"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
@@ -214,6 +216,7 @@ export const Cart = () => {
                       name="expiration-date"
                       id="expiration-date"
                       autoComplete="cc-exp"
+                      maxLength="5"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
@@ -232,6 +235,7 @@ export const Cart = () => {
                       name="cvc"
                       id="cvc"
                       autoComplete="csc"
+                      maxLength="3"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
@@ -263,6 +267,7 @@ export const Cart = () => {
                       autoComplete="street-address"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       onChange={(e) => setStreetAddress(e.target.value)}
+                      maxLength="60"
                     />
                   </div>
                 </div>
@@ -280,6 +285,7 @@ export const Cart = () => {
                       id="apartment"
                       name="apartment"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      maxLength="12"
                     />
                   </div>
                 </div>
@@ -299,6 +305,7 @@ export const Cart = () => {
                       name="city"
                       autoComplete="address-level2"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      maxLength="24"
                     />
                   </div>
                 </div>
@@ -318,6 +325,7 @@ export const Cart = () => {
                       name="region"
                       autoComplete="address-level1"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      maxLength="2"
                     />
                   </div>
                 </div>
@@ -337,6 +345,7 @@ export const Cart = () => {
                       name="postal-code"
                       autoComplete="postal-code"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      maxLength="5"
                     />
                   </div>
                 </div>
