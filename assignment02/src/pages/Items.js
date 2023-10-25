@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext, items } from "../contexts/Cart";
 import { PageContext } from "../contexts/Page";
+import { Authors } from "../components/Authors";
 
 export const Items = () => {
   const { cart, addToCart, removeFromCart } = useContext(CartContext);
@@ -11,17 +12,7 @@ export const Items = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <div className="flex items-center justify-between">
-            <div>
-              <p>
-                <span className="font-bold">Name: </span> Ryan Huellen
-              </p>
-              <p>
-                <span className="font-bold">NetId: </span>rhuellen
-              </p>
-              <p>
-                <span className="font-bold">Date: </span> 24 Oct. 2023
-              </p>
-            </div>
+            <Authors />
             <h1 className="text-2xl font-bold tracking-tight text-gray-900">
               Available Items
             </h1>
